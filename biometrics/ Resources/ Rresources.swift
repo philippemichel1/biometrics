@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+struct Resources {
+    enum pictures: String {
+        case lock_open = "lock.open.ipad"
+        case lock = "lock.ipad"
+    }
+}

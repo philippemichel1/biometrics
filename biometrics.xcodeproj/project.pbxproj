@@ -11,6 +11,8 @@
 		37006EDD2BB9AA8B00732EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37006EDC2BB9AA8B00732EA6 /* ContentView.swift */; };
 		37006EDF2BB9AA8E00732EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37006EDE2BB9AA8E00732EA6 /* Assets.xcassets */; };
 		37006EE22BB9AA8E00732EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37006EE12BB9AA8E00732EA6 /* Preview Assets.xcassets */; };
+		37006EEB2BB9AC8700732EA6 /*  Rresources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37006EEA2BB9AC8700732EA6 /*  Rresources.swift */; };
+		37006EED2BB9AEAE00732EA6 /* ViewPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37006EEC2BB9AEAE00732EA6 /* ViewPicture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		37006EDC2BB9AA8B00732EA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37006EDE2BB9AA8E00732EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37006EE12BB9AA8E00732EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37006EEA2BB9AC8700732EA6 /*  Rresources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Rresources.swift"; sourceTree = "<group>"; };
+		37006EEC2BB9AEAE00732EA6 /* ViewPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPicture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		37006ED92BB9AA8B00732EA6 /* biometrics */ = {
 			isa = PBXGroup;
 			children = (
+				37006EE92BB9AC4400732EA6 /*  Resources */,
 				37006EDA2BB9AA8B00732EA6 /* biometricsApp.swift */,
-				37006EDC2BB9AA8B00732EA6 /* ContentView.swift */,
+				37006EE82BB9ABD400732EA6 /* View */,
 				37006EDE2BB9AA8E00732EA6 /* Assets.xcassets */,
 				37006EE02BB9AA8E00732EA6 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				37006EE12BB9AA8E00732EA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37006EE82BB9ABD400732EA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37006EDC2BB9AA8B00732EA6 /* ContentView.swift */,
+				37006EEC2BB9AEAE00732EA6 /* ViewPicture.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37006EE92BB9AC4400732EA6 /*  Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37006EEA2BB9AC8700732EA6 /*  Rresources.swift */,
+			);
+			path = " Resources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			files = (
 				37006EDD2BB9AA8B00732EA6 /* ContentView.swift in Sources */,
 				37006EDB2BB9AA8B00732EA6 /* biometricsApp.swift in Sources */,
+				37006EEB2BB9AC8700732EA6 /*  Rresources.swift in Sources */,
+				37006EED2BB9AEAE00732EA6 /* ViewPicture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				DEVELOPMENT_TEAM = UGQ4YS2NK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = Application;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +329,7 @@
 				DEVELOPMENT_TEAM = UGQ4YS2NK3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = Application;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
