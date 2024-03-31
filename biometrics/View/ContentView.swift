@@ -24,11 +24,17 @@ struct ContentView: View {
         }
         
     }
+    
+    // doc apple qui explique la mise en oeuvre
+// https://developer.apple.com/documentation/localauthentication/
     // fonction qui gere la biométrie
     func authenticationBiometrics() {
+        // Un mécanisme d'évaluation des politiques d'authentification et des contrôles d'accès.
         let context = LAContext()
         let policy: LAPolicy = .deviceOwnerAuthenticationWithBiometrics
+        // creation d'une raison
         let reason: String = "Pour acceder à votre photo"
+        // erreur est un optionnel car on n'a pas forcement d'erreur.
         var error: NSError?
         
         if context.canEvaluatePolicy(policy, error: &error) {
