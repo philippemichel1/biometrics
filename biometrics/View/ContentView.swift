@@ -22,16 +22,16 @@ struct ContentView: View {
             Spacer()
         }
         .onAppear() {
-            // demande l'autentification la photo est caché
+            // demande l'authentification la photo est caché
             if isPresentedPicture == false {
-                authenticationBiometrics()
+                biometricsAuthentication()
             }
         }
         // application active // arriere plan // inactive
         .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active{
                 if isPresentedPicture == false {
-                    authenticationBiometrics()
+                    biometricsAuthentication()
                 }
                 
             } else if newPhase == .background {
@@ -46,7 +46,7 @@ struct ContentView: View {
     // doc apple qui explique la mise en oeuvre
     // https://developer.apple.com/documentation/localauthentication/
     // fonction qui gere la biométrie
-    func authenticationBiometrics() {
+    func biometricsAuthentication() {
         // Un mécanisme d'évaluation des politiques d'authentification et des contrôles d'accès.
         let context = LAContext()
         let policy: LAPolicy = .deviceOwnerAuthenticationWithBiometrics
